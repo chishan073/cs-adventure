@@ -1,0 +1,290 @@
+# Intro to Bash
+
+This folder contains basic Bash scripting exercises and examples that introduce foundational concepts of Bash scripting.
+
+## Objectives
+
+- Learn basic Bash commands and file operations
+- Understand how to navigate directories using the terminal
+- Practice writing simple Bash scripts
+
+## Folder Contents
+
+- `script1.sh`: A simple Bash script demonstrating basic syntax.
+- `example.md`: A markdown file with sample Bash commands.
+
+## How to Use
+
+1. Open a terminal in this directory.
+2. Run the following command to execute `script1.sh`:
+
+```bash
+bash script1.sh
+
+### 5. **學習資源**  
+如果你有任何參考資料或外部學習資源，也可以放在這裡，例如：
+
+```markdown
+## Learning Resources
+
+- [Bash Scripting Guide](https://www.gnu.org/software/bash/manual/)
+- [The Linux Command Line](http://linuxcommand.org/)
+---
+## 📘 Markdown 語法簡介
+
+Markdown 是一種輕量級標記語言，讓你能快速編寫格式化的文本。以下是一些常見的 Markdown 語法：
+
+### 1. 標題
+
+使用 `#` 表示標題級別。越多的 `#` 表示標題的層級越低。
+
+```markdown
+# 標題 1
+## 標題 2
+### 標題 3
+#### 標題 4
+```
+
+### 2. 強調文字（加粗 / 斜體）
+
+- 斜體：使用單個星號或底線包圍文字
+- 加粗：使用兩個星號或底線包圍文字
+
+```markdown
+*斜體文字* 或 _斜體文字_
+
+**加粗文字** 或 __加粗文字__
+```
+
+### 3. 無序列表
+
+使用 `-`、`*` 或 `+` 表示無序列表項目。
+
+```markdown
+- 項目 1
+- 項目 2
+- 項目 3
+```
+
+### 4. 有序列表
+
+使用數字和點（例如：`1.`、`2.`）表示有序列表。
+
+```markdown
+1. 第一項
+2. 第二項
+3. 第三項
+```
+
+### 5. 連結
+
+使用 `[文字](URL)` 來創建超連結。
+
+```markdown
+[Google](https://www.google.com)
+```
+
+### 6. 圖片
+
+圖片的語法與連結類似，只是前面加上 `!`。
+
+```markdown
+![圖片描述](圖片URL)
+```
+
+### 7. 代碼區塊
+
+使用反引號（`` ` ``）來標記行內代碼，或使用三個反引號（```` ``` ````）來標記多行代碼區塊。
+
+```markdown
+`行內代碼`
+
+```bash
+# 多行代碼區塊
+echo "Hello, World!"
+```
+```
+
+### 8. 水平線
+
+使用三個或更多的破折號（`---`）、星號（`***`）或底線（`___`）來創建水平線。
+
+```markdown
+---
+```
+
+### 9. 引用
+
+使用 `>` 來創建引用文字。
+
+```markdown
+> 這是引用的文字。
+```
+
+### 10. 復選框
+
+使用 `- [ ]` 和 `- [x]` 來創建復選框。
+
+```markdown
+- [ ] 任務 1
+- [x] 任務 2
+- [ ] 任務 3
+```
+
+### 11. 表格
+
+使用 `|` 創建表格，並用 `-` 標記表格的分隔線。
+
+```markdown
+| 標題 1 | 標題 2 |
+|--------|--------|
+| 內容 1 | 內容 2 |
+| 內容 3 | 內容 4 |
+```
+
+## 📘 `nano` 編輯器快捷鍵小抄
+
+> ✅ 常用在 Linux / macOS / WSL / Git Bash 等終端環境
+
+| 功能                    | 快捷鍵             | 備註                                |
+|-------------------------|--------------------|-------------------------------------|
+| 📄 基本操作              |                    |                                     |
+| 存檔                    | `Ctrl + O`         | O = Output                          |
+| 離開                    | `Ctrl + X`         | X = Exit                            |
+| 取消操作 / 離開提示     | `Ctrl + C`         | C = Cancel                          |
+|                         |                    |                                     |
+| 🧭 游標移動              |                    |                                     |
+| 移動到行首              | `Ctrl + A`         | A = Anchor                          |
+| 移動到行尾              | `Ctrl + E`         | E = End                             |
+| 向上一行                | `Ctrl + P`         | P = Previous                        |
+| 向下一行                | `Ctrl + N`         | N = Next                            |
+| 向左一格                | `Ctrl + B`         | B = Back                            |
+| 向右一格                | `Ctrl + F`         | F = Forward                         |
+|                         |                    |                                     |
+| ✂️ 複製貼上剪下          |                    |                                     |
+| 剪下當前行              | `Ctrl + K`         | K = Kill line                       |
+| 貼上剪下的內容          | `Ctrl + U`         | U = Un-kill（貼上）                 |
+| 開始選取文字區塊        | `Ctrl + ^`         | 移動游標即選取                      |
+| 複製選取的區塊          | `Alt + 6`          | 儲存複製內容                        |
+|                         |                    |                                     |
+| 🔍 搜尋與替換            |                    |                                     |
+| 搜尋文字                | `Ctrl + W`         | W = Where is                        |
+| 替換文字                | `Ctrl + \\`        | \ = 替換，需先搜尋                  |
+|                         |                    |                                     |
+| 🔧 其他實用              |                    |                                     |
+| 顯示行號                | `Ctrl + C`         | 顯示目前游標行號（不是取消）        |
+| 切換自動換行            | `Meta + L`         | Meta = Alt 鍵，L = Line wrap        |
+| 說明 / 顯示所有指令      | `Ctrl + G`         | G = Get help
+
+
+## 📘 Markdown 語法簡介
+
+Markdown 是一種輕量級標記語言，讓你能快速編寫格式化的文本。以下是一些常見的 Markdown 語法：
+
+### 1. 標題
+
+使用 `#` 表示標題級別。越多的 `#` 表示標題的層級越低。
+
+```markdown
+# 標題 1
+## 標題 2
+### 標題 3
+#### 標題 4
+```
+
+### 2. 強調文字（加粗 / 斜體）
+
+- 斜體：使用單個星號或底線包圍文字
+- 加粗：使用兩個星號或底線包圍文字
+
+```markdown
+*斜體文字* 或 _斜體文字_
+
+**加粗文字** 或 __加粗文字__
+```
+
+### 3. 無序列表
+
+使用 `-`、`*` 或 `+` 表示無序列表項目。
+
+```markdown
+- 項目 1
+- 項目 2
+- 項目 3
+```
+
+### 4. 有序列表
+
+使用數字和點（例如：`1.`、`2.`）表示有序列表。
+
+```markdown
+1. 第一項
+2. 第二項
+3. 第三項
+```
+
+### 5. 連結
+
+使用 `[文字](URL)` 來創建超連結。
+
+```markdown
+[Google](https://www.google.com)
+```
+
+### 6. 圖片
+
+圖片的語法與連結類似，只是前面加上 `!`。
+
+```markdown
+![圖片描述](圖片URL)
+```
+
+### 7. 代碼區塊
+
+使用反引號（`` ` ``）來標記行內代碼，或使用三個反引號（```` ``` ````）來標記多行代碼區塊。
+
+```markdown
+`行內代碼`
+
+```bash
+# 多行代碼區塊
+echo "Hello, World!"
+```
+```
+
+### 8. 水平線
+
+使用三個或更多的破折號（`---`）、星號（`***`）或底線（`___`）來創建水平線。
+
+```markdown
+---
+```
+
+### 9. 引用
+
+使用 `>` 來創建引用文字。
+
+```markdown
+> 這是引用的文字。
+```
+
+### 10. 復選框
+
+使用 `- [ ]` 和 `- [x]` 來創建復選框。
+
+```markdown
+- [ ] 任務 1
+- [x] 任務 2
+- [ ] 任務 3
+```
+
+### 11. 表格
+
+使用 `|` 創建表格，並用 `-` 標記表格的分隔線。
+
+```markdown
+| 標題 1 | 標題 2 |
+|--------|--------|
+| 內容 1 | 內容 2 |
+| 內容 3 | 內容 4 |
+```
